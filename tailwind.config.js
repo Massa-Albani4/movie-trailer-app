@@ -6,6 +6,10 @@ export default {
       colors: {
         gray: "#686868",
       },
+      screens: {
+        xl: "1440px",
+        "2xl": "1920px",
+      },
     },
     fontFamily: {
       body: ["Open Sans"],

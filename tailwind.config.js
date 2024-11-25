@@ -3,9 +3,6 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      colors: {
-        gray: "#686868",
-      },
       screens: {
         xl: "1440px",
         "2xl": "1920px",
@@ -13,6 +10,10 @@ export default {
     },
     fontFamily: {
       body: ["Open Sans"],
+    },
+    colors: {
+      "light-green": "#EDFFAB",
+      "dark-green": "#30362F",
     },
   },
   plugins: [],

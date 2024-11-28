@@ -11,7 +11,7 @@ function App() {
           search for any movies/shows
         </h1>
         <div
-          className="border-[1px] w-[84%] xl:w-full mb-14 cursor-pointer flex flex-row bg-dark-green rounded-[5px] px-[.65rem] xl:px-5 py-[.38rem] xl:py-[.38rem] text-light-green"
+          className="border-[1px] w-[84%] xl:w-full mb-14 xl:mb-8 cursor-pointer flex flex-row bg-dark-green rounded-[5px] px-[.65rem] xl:px-5 py-[.38rem] xl:py-[.38rem] text-light-green"
           autoComplete="off"
         >
           <input

@@ -7,6 +7,9 @@ export default {
         xl: "1440px",
         "2xl": "1920px",
       },
+      backgroundColor: {
+        transparent: "transparent",
+      },
     },
     fontFamily: {
       body: ["Open Sans"],

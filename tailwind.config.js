@@ -10,13 +10,12 @@ export default {
       backgroundColor: {
         transparent: "transparent",
       },
+      colors: {
+        "dark-green": "#30362F",
+      },
     },
     fontFamily: {
       body: ["Open Sans"],
-    },
-    colors: {
-      "light-green": "#EDFFAB",
-      "dark-green": "#30362F",
     },
   },
   plugins: [],

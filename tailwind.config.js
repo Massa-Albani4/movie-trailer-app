@@ -11,7 +11,7 @@ export default {
         transparent: "transparent",
       },
       colors: {
-        "dark-green": "#30362F",
+        blue: "#2C2C34",
       },
     },
     fontFamily: {

@@ -23,11 +23,11 @@ function App() {
           search for any movies/shows
         </h1>
         <div
-          className="border-[1px] w-[84%] lg:w-[28%] xl:w-full mb-14 xl:mb-[4.88rem] cursor-pointer flex flex-row rounded-[5px] px-3 xl:px-5 py-[.38rem] xl:py-[.38rem] text-light-green"
+          className="border-[1px] w-[84%] lg:w-[28%] xl:w-full mb-14 xl:mb-[4.88rem] cursor-pointer flex flex-row rounded-[5px] px-3 xl:px-5 py-[.3rem] xl:py-[.5rem] text-light-green"
           autoComplete="off"
         >
           <input
-            className="bg-transparent pt-[.1rem] w-full flex justify-center items-center focus:outline-none focus:ring-0 placeholder:text-white placeholder:text-sm xl:placeholder:text-base xl:mb-[.13rem] text-xs xl:text-xl text-white"
+            className="bg-transparent pt-[.1rem] w-full flex justify-center items-center focus:outline-none focus:ring-0 placeholder:text-white placeholder:text-sm xl:placeholder:text-base xl:mb-[.13rem] text-xs lg:text-sm xl:text-xl text-white"
             type="text"
             placeholder="Search"
             onChange={(e) => {

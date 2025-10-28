@@ -7,9 +7,8 @@ function App() {
   const [video, setVideo] = useState("");
   const [videoURL, setVideoURL] = useState("");
 
-  //A function to fetch the required URL
-  // and storing it inside the
-  // videoURL state variable
+  /* A function to fetch the required URL
+   and storing it inside the videoURL state variable */
   function handleSearch() {
     movieTrailer(video).then((res) => {
       setVideoURL(res);
@@ -17,7 +16,7 @@ function App() {
   }
 
   return (
-    <div className="h-screen flex flex-col font-body justify-center items-center bg-blue">
+    <div className="h-screen flex flex-col font-body justify-center items-center bg-black">
       <div className="flex flex-col items-center xl:mt-1 w-[87%] xl:w-[31%]">
         <h1 className="text-xl xl:text-[2rem] lg:text-2xl mb-[1.38rem] xl:mb-8 text-white">
           search for any movies/shows

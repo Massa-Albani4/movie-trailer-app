@@ -11,7 +11,7 @@ export default {
         transparent: "transparent",
       },
       colors: {
-        blue: "#2C2C34",
+        black: "#0A0A0A",
       },
     },
     fontFamily: {

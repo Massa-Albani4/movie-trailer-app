@@ -43,7 +43,7 @@ function App() {
             onClick={handleSearch}
           >
             <img
-              className="size-[.9rem] xl:size-5"
+              className="size-5 xl:size-5"
               src={searchIcon}
               alt="Search icon"
             />

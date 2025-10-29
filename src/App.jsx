@@ -50,7 +50,7 @@ function App() {
           </button>
         </div>
       </div>
-      <div className="w-[85%] lg:w-[45%] lg:h-[16.2rem] xl:w-[37%] xl:h-80 2xl:w-[20%] h-[19rem] mb-24 lg:mb-5 2xl:h-[20rem]">
+      <div className="w-[85%] md:w-[60%] md:h-[21rem] lg:h-[16.2rem] xl:w-[60%] xl:h-[26rem] 2xl:w-[20%] h-[19rem] mb-24 lg:mb-5 2xl:h-[20rem]">
         <ReactPlayer url={videoURL} width={"100%"} height={"100%"} />
       </div>
     </div>

@@ -16,17 +16,17 @@ function App() {
   }
 
   return (
-    <div className="h-screen flex flex-col font-body justify-center items-center bg-black">
+    <div className="h-screen flex flex-col font-body md:pt-10 justify-center items-center bg-black">
       <div className="flex flex-col items-center 2xl:mt-1 w-[87%] 2xl:w-[31%]">
         <h1 className="text-xl 2xl:text-[2rem] lg:text-2xl mb-[1.38rem] 2xl:mb-8 text-white">
           search for any movies/shows
         </h1>
         <div
-          className="border-[1px] w-[84%] lg:w-[28%] md:w-[43%] xl:px-4 2xl:w-full mb-14 2xl:mb-[4.88rem] cursor-pointer flex flex-row rounded-[5px] px-3 2xl:px-5 py-[.3rem] 2xl:py-[.5rem] text-light-green"
+          className="border-[1px] w-[84%] xl:w-[28%] md:w-[36%] xl:px-4 2xl:w-full mb-14 lg:mb-5 md:mb-2 xl:mb-2 2xl:mb-[4.88rem] cursor-pointer flex flex-row rounded-[5px] px-3 2xl:px-5 py-[.3rem] 2xl:py-[.5rem] xl:pt-[.2rem] text-light-green"
           autoComplete="off"
         >
           <input
-            className="bg-transparent pt-[.1rem] w-full flex justify-center items-center focus:outline-none focus:ring-0 placeholder:text-white placeholder:text-sm 2xl:placeholder:text-base xl:placeholder:text-base 2xl:mb-[.13rem] text-xs xl:text-base lg:text-sm 2xl:text-xl text-white"
+            className="bg-transparent pt-[.1rem] w-full flex justify-center items-center focus:outline-none focus:ring-0 placeholder:text-white placeholder:text-sm 2xl:placeholder:text-base md:placeholder:text-sm xl:placeholder:text-base 2xl:mb-[.13rem] text-xs xl:text-base lg:text-sm 2xl:text-xl md:text-sm text-white"
             type="text"
             placeholder="Search"
             onChange={(e) => {
@@ -50,7 +50,7 @@ function App() {
           </button>
         </div>
       </div>
-      <div className="w-[85%] md:w-[60%] md:h-[21rem] lg:h-[16.2rem] xl:w-[60%] xl:h-[26rem] 2xl:w-[20%] h-[19rem] mb-24 lg:mb-5 2xl:h-[20rem]">
+      <div className="w-[85%] md:w-[60%] md:h-[21rem] lg:h-[16.2rem] xl:w-[50%] xl:h-[22rem] 2xl:w-[20%] h-[19rem] mb-24 lg:mb-2 md:mb-5 2xl:h-[20rem]">
         <ReactPlayer url={videoURL} width={"100%"} height={"100%"} />
       </div>
     </div>

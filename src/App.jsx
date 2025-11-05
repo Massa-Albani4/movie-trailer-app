@@ -23,7 +23,7 @@ function App() {
             search for any movies/shows
           </h1>
           <div
-            className="border-[1px] w-[84%] xl:w-[24%] md:w-[36%] xl:px-3 mb-14 lg:mb-5 md:mb-2 xl:mb-2 cursor-pointer flex flex-row rounded-[5px] px-3 xl: pb-[.3rem] pt-[.1rem] text-light-green"
+            className="border-[1px] w-[84%] xl:w-[24%] lg:w-[28%] xl:px-3 mb-14 lg:mb-5 md:mb-2 xl:mb-2 cursor-pointer flex flex-row rounded-[5px] px-3 xl: pb-[.3rem] pt-[.1rem] text-light-green"
             autoComplete="off"
           >
             <input

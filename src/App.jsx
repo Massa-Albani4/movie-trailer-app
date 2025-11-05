@@ -22,7 +22,7 @@ function App() {
           search for any movies/shows
         </h1>
         <div
-          className="text-light-green mb-14 flex w-[84%] cursor-pointer flex-row rounded-[5px] border-[1px] px-3 pb-[.3rem] pt-[.1rem] sm:h-8 sm:w-72 sm:px-3 sm:pb-1 md:mb-2 lg:mb-5 lg:w-[28%] xl:mb-2 xl:w-[24%] xl:px-3"
+          className="text-light-green mb-14 flex w-[84%] cursor-pointer flex-row rounded-[5px] border-[1px] px-3 pb-[.3rem] pt-[.1rem] sm:mb-10 sm:h-8 sm:w-72 sm:px-3 sm:pb-1 md:mb-2 lg:mb-5 lg:w-[28%] xl:mb-2 xl:w-[24%] xl:px-3"
           autoComplete="off"
         >
           <input
@@ -43,7 +43,7 @@ function App() {
             onClick={handleSearch}
           >
             <img
-              className="mt-1 size-5 sm:mb-0 sm:mt-[.2rem] 2xl:size-5 2xl:h-10"
+              className="mt-1 size-5 sm:mb-0 sm:mt-[.2rem] sm:size-4 2xl:size-5 2xl:h-10"
               src={searchIcon}
               alt="Search icon"
             />

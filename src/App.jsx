@@ -17,9 +17,9 @@ function App() {
 
   return (
     <div className="h-screen flex flex-col font-body md:pt-10 lg:pt-4 xl:pt-0 justify-center items-center bg-black">
-      <div className="flex flex-col items-center justify-center w-full xl:gap-10">
+      <div className="flex flex-col items-center justify-center w-full xl:gap-10 lg:gap-6">
         <div className="flex flex-col items-center justify-center w-full">
-          <h1 className="text-xl 2xl:text-[2rem] lg:text-2xl mb-[1.38rem] 2xl:mb-8 text-white">
+          <h1 className="text-xl 2xl:text-[2rem] lg:text-2xl mb-[1.38rem] lg:mb-4 2xl:mb-8 text-white">
             search for any movies/shows
           </h1>
           <div
@@ -51,7 +51,7 @@ function App() {
             </button>
           </div>
         </div>
-        <div className="w-[85%] md:w-[60%] md:h-[21rem] lg:h-[16.2rem] xl:w-[50%] xl:h-[22rem] 2xl:w-[20%] h-[19rem] mb-24 lg:mb-2 md:mb-5 2xl:h-[20rem]">
+        <div className="w-[85%] lg:w-[58%] lg:h-[21rem] xl:w-[50%] xl:h-[22rem] 2xl:w-[20%] h-[19rem] mb-24 lg:mb-2 md:mb-5 2xl:h-[20rem]">
           <ReactPlayer url={videoURL} width={"100%"} height={"100%"} />
         </div>
       </div>

@@ -16,44 +16,42 @@ function App() {
   }
 
   return (
-    <div className="h-screen flex flex-col font-body md:pt-10 lg:pt-4 xl:pt-0 justify-center items-center bg-black">
-      <div className="flex flex-col items-center justify-center w-full xl:gap-10 lg:gap-6">
-        <div className="flex flex-col items-center justify-center w-full">
-          <h1 className="text-xl 2xl:text-[2rem] lg:text-2xl mb-[1.38rem] lg:mb-4 2xl:mb-8 text-white">
-            search for any movies/shows
-          </h1>
-          <div
-            className="border-[1px] w-[84%] xl:w-[24%] lg:w-[28%] xl:px-3 mb-14 lg:mb-5 md:mb-2 xl:mb-2 cursor-pointer flex flex-row rounded-[5px] px-3 xl: pb-[.3rem] pt-[.1rem] text-light-green"
-            autoComplete="off"
+    <div className="flex h-screen w-full flex-col items-center justify-center bg-black font-body md:pt-10 lg:gap-6 lg:pt-4 xl:gap-10 xl:pt-0">
+      <div className="flex flex-col items-center justify-center">
+        <h1 className="mb-[1.38rem] text-xl text-white sm:mb-4 sm:text-lg lg:mb-4 lg:text-2xl 2xl:mb-8 2xl:text-[2rem]">
+          search for any movies/shows
+        </h1>
+        <div
+          className="text-light-green mb-14 flex w-[84%] cursor-pointer flex-row rounded-[5px] border-[1px] px-3 pb-[.3rem] pt-[.1rem] sm:h-8 sm:w-72 sm:px-3 sm:pb-1 md:mb-2 lg:mb-5 lg:w-[28%] xl:mb-2 xl:w-[24%] xl:px-3"
+          autoComplete="off"
+        >
+          <input
+            className="flex w-full items-center justify-center bg-transparent pt-[.1rem] text-xs text-white placeholder:text-sm placeholder:text-white focus:outline-none focus:ring-0 sm:pt-[.2rem] sm:text-sm sm:placeholder:text-sm md:text-sm md:placeholder:text-sm lg:text-sm xl:w-full xl:text-base xl:placeholder:text-base 2xl:mb-[.13rem] 2xl:text-xl 2xl:placeholder:text-base"
+            type="text"
+            placeholder="Search"
+            onChange={(e) => {
+              setVideo(e.target.value);
+            }}
+            onKeyPress={(e) => {
+              if (e.key === "Enter") {
+                handleSearch();
+              }
+            }}
+          />
+          <button
+            className="border-none bg-transparent focus:outline-none"
+            onClick={handleSearch}
           >
-            <input
-              className="bg-transparent pt-[.1rem] w-full xl:w-full flex justify-center items-center focus:outline-none focus:ring-0 placeholder:text-white placeholder:text-sm 2xl:placeholder:text-base md:placeholder:text-sm xl:placeholder:text-base 2xl:mb-[.13rem] text-xs xl:text-base lg:text-sm 2xl:text-xl md:text-sm text-white"
-              type="text"
-              placeholder="Search"
-              onChange={(e) => {
-                setVideo(e.target.value);
-              }}
-              onKeyPress={(e) => {
-                if (e.key === "Enter") {
-                  handleSearch();
-                }
-              }}
+            <img
+              className="mt-1 size-5 sm:mb-0 sm:mt-[.2rem] 2xl:size-5 2xl:h-10"
+              src={searchIcon}
+              alt="Search icon"
             />
-            <button
-              className="bg-transparent border-none focus:outline-none"
-              onClick={handleSearch}
-            >
-              <img
-                className="size-5 2xl:size-5 2xl:h-10 mt-1"
-                src={searchIcon}
-                alt="Search icon"
-              />
-            </button>
-          </div>
+          </button>
         </div>
-        <div className="w-[85%] lg:w-[58%] lg:h-[21rem] xl:w-[50%] xl:h-[22rem] 2xl:w-[20%] h-[19rem] mb-24 lg:mb-2 md:mb-5 2xl:h-[20rem]">
-          <ReactPlayer url={videoURL} width={"100%"} height={"100%"} />
-        </div>
+      </div>
+      <div className="mb-24 h-[19rem] w-[85%] md:mb-5 lg:mb-2 lg:h-[21rem] lg:w-[58%] xl:h-[22rem] xl:w-[50%] 2xl:h-[20rem] 2xl:w-[20%]">
+        <ReactPlayer url={videoURL} width={"100%"} height={"100%"} />
       </div>
     </div>
   );

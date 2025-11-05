@@ -5,6 +5,7 @@ export default {
     extend: {
       screens: {
         "2xl": "1440px",
+        sm: "425px",
       },
       backgroundColor: {
         transparent: "transparent",

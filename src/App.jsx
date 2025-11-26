@@ -16,17 +16,17 @@ function App() {
   }
 
   return (
-    <div className="flex h-screen w-full flex-col items-center justify-center bg-black font-body lg:gap-6 xl:gap-10">
+    <div className="flex min-h-screen w-full flex-col items-center justify-center bg-black font-body lg:gap-6 xl:gap-16 xl:pb-20 xl:pt-20">
       <div className="flex flex-col items-center justify-center">
-        <h1 className="mb-7 text-xl text-white md:mb-9 md:text-3xl 2xl:mb-8 2xl:text-[2rem]">
+        <h1 className="mb-7 text-xl text-white md:mb-9 md:text-3xl xl:mb-4 xl:text-3xl 2xl:mb-8 2xl:text-5xl">
           search for any movies/shows
         </h1>
         <div
-          className="text-light-green mb-14 flex w-full cursor-pointer flex-row rounded-md border-[1px] px-3 sm:mb-10 sm:h-10 md:mb-2 md:h-12 md:rounded-lg md:px-5 xl:my-4 xl:mb-2 xl:h-10 xl:w-80 xl:rounded-md xl:px-4 xl:py-1"
+          className="text-light-green mb-20 flex w-full max-w-full cursor-pointer flex-row rounded-md border-[1px] px-3 sm:mb-10 sm:h-10 md:mb-16 md:h-12 md:rounded-lg md:px-5 xl:my-4 xl:mb-2 xl:h-11 xl:w-80 xl:rounded-md xl:px-4 xl:py-0"
           autoComplete="off"
         >
           <input
-            className="my-2 flex w-full items-center justify-center bg-transparent text-base text-white placeholder:text-base placeholder:text-white focus:outline-none focus:ring-0 md:mb-[.6rem] md:text-xl md:placeholder:text-xl lg:w-[28rem] lg:text-sm xl:w-full xl:text-lg xl:placeholder:text-lg 2xl:mb-[.13rem] 2xl:text-xl 2xl:placeholder:text-base"
+            className="my-2 flex w-full items-center justify-center bg-transparent text-base text-white placeholder:text-base placeholder:text-white focus:outline-none focus:ring-0 md:mb-[.6rem] md:text-xl md:placeholder:text-xl lg:w-[28rem] lg:text-sm xl:text-lg xl:placeholder:text-lg 2xl:mb-[.13rem] 2xl:text-xl 2xl:placeholder:text-base"
             type="text"
             placeholder="Search"
             onChange={(e) => {
@@ -43,7 +43,7 @@ function App() {
             onClick={handleSearch}
           >
             <img
-              className="size-6 md:size-7 xl:size-6"
+              className="size-6 md:size-7 xl:size-10"
               src={searchIcon}
               alt="Search icon"
             />

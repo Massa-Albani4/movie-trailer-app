@@ -18,11 +18,11 @@ function App() {
   return (
     <div className="flex min-h-screen w-full flex-col items-center justify-center bg-black font-body lg:gap-6 xl:gap-16 xl:pb-20 xl:pt-20">
       <div className="flex flex-col items-center justify-center">
-        <h1 className="mb-7 text-xl text-white md:mb-9 md:text-3xl xl:mb-4 xl:text-3xl 2xl:mb-8 2xl:text-5xl">
+        <h1 className="mb-7 text-xl text-white md:mb-9 md:text-3xl xl:mb-4 xl:text-2xl 2xl:mb-8 2xl:text-3xl">
           search for any movies/shows
         </h1>
         <div
-          className="text-light-green mb-20 flex w-full max-w-full cursor-pointer flex-row rounded-md border-[1px] px-3 sm:mb-10 sm:h-10 md:mb-16 md:h-12 md:rounded-lg md:px-5 xl:my-4 xl:mb-2 xl:h-11 xl:w-80 xl:rounded-md xl:px-4 xl:py-0"
+          className="text-light-green mb-20 flex w-full max-w-full cursor-pointer flex-row rounded-md border-[1px] px-3 sm:mb-10 sm:h-10 md:mb-16 md:h-12 md:rounded-lg md:px-5 xl:my-4 xl:mb-2 xl:h-10 xl:w-[22rem] xl:rounded-md xl:px-4 xl:py-0"
           autoComplete="off"
         >
           <input
@@ -43,7 +43,7 @@ function App() {
             onClick={handleSearch}
           >
             <img
-              className="size-6 md:size-7 xl:size-10"
+              className="size-6 md:size-7 xl:size-9"
               src={searchIcon}
               alt="Search icon"
             />
